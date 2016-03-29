@@ -67,7 +67,7 @@ byte charToHex(byte ch);
  */
 void rfPacketReceived(CCPACKET *packet)
 {
-  if (packet->length > 5)
+  if (packet->length > /*5*/0)
   {
     rxPacket = packet;
     packetAvailable = true;
@@ -265,8 +265,7 @@ void setup()
   // Reset serial buffer
   memset(strSerial, 0, sizeof(strSerial));
 
-  Serial.begin(38400);
-  //Serial.begin(57600);
+  Serial.begin(SERIAL_SPEED);
   Serial.flush();
   Serial.println("");
   

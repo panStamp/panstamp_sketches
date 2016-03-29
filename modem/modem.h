@@ -31,7 +31,7 @@
 #include "HardwareSerial.h"
 #include "version.h"
 
-
+#define SERIAL_SPEED             38400
 #define SERIAL_BUF_LEN           128     // Maximum length for any serial string
 #define TIMER1_TICK_PERIOD_US    500000  // Timer1 tick = 500 ms
 #define MAX_SERIAL_SILENCE_MS    1000    // Maximum serial silence between serial command characters = 1000 ms
