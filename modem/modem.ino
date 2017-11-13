@@ -353,7 +353,7 @@ void loop()
       memset(strSerial, 0, sizeof(strSerial));
       len = 0;
     }
-    else
+    else if (ch!= 0x0A)
     {
       strSerial[len] = ch; 
       len++;
